@@ -1,3 +1,5 @@
+package abc.`007`
+
 // 幅優先探索
 import java.util.ArrayDeque
 

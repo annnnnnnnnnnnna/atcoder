@@ -1,4 +1,6 @@
-enum class Direction(val x:Int, val y: Int) {
+package abc.`113`
+
+enum class Directions(val x:Int, val y: Int) {
     L(-1, 0),
     R(1, 0),
     U(0, 1),
@@ -12,7 +14,7 @@ fun main(args: Array<String>) {
     var x = 0
     var y = 0
     s.replace("?", "").toCharArray().forEach {
-        val m = Direction.valueOf(it.toString())
+        val m = Directions.valueOf(it.toString())
         x += m.x
         y += m.y
     }
