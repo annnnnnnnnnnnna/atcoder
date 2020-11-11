@@ -1,0 +1,10 @@
+fun main(args: Array<String>) {
+    val (k, s) = readLine()!!.split(' ').map { it.toInt() }
+    var ans = 0
+    for (x  in 0 .. k) {
+        for (y  in 0 .. Math.min(s-x,k)) {
+            if (s-x-y <= k) ans ++
+        }
+    }
+    println(ans)
+}

@@ -1,8 +1,4 @@
-import java.io.PrintWriter
-
-@JvmField val _writer = PrintWriter(System.out, false)
-fun main(args: Array<String>) { _writer.solve(); _writer.flush() }
-fun PrintWriter.solve() {
+fun main(args: Array<String>) {
     val (h, w) = readLine()!!.split(' ').map { it.toInt() }
     val inField = Array(h){ "" }
     val judgeField = Array(h){ CharArray(w) }
