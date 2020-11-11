@@ -1,3 +1,5 @@
+@file:JvmName("BKt")
+
 fun main(args: Array<String>) {
     val xy = readLine()!!.split(' ').map { it.toDouble() }.chunked(2)
 
