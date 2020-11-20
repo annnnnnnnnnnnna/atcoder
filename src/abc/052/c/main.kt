@@ -1,4 +1,4 @@
-package abc.`183`.c
+package abc.`052`.c
 
 import java.io.PrintWriter
 import kotlin.math.*
@@ -9,7 +9,6 @@ fun PrintWriter.solve() {
     val (N, K) = readLine()!!.split(' ').map { it.toInt() }
     val times =  (1..N).map{ readLine()!!.split(' ').map { it.toInt() } }
 
-    // 順列の全列挙と条件に合うかのチェック
     val plan = IntArray(N+1)
     var ans = 0
     fun chk () {
